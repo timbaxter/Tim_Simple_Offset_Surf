@@ -229,3 +229,10 @@ footer {
     padding: 20px;
 }
 
+.my-image-grab{
+  border: 2px solid;
+  padding: 25px;
+  height: auto;
+  width: 200px;
+  float: right;
+}
