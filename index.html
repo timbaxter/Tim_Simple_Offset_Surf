@@ -5,95 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .container {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            max-width: 800px;
-        }
-
-        .landing-content {
-            display: flex;
-            flex-direction: column; /* Mobile-first: stack elements vertically */
-            align-items: center;
-            margin-top: 30px;
-        }
-
-        .landing-content img {
-            width: 100%; /* Full width for mobile */
-            margin-bottom: 20px; /* Spacing between stacked elements */
-        }
-
-        .landing-content p {
-            width: 100%; /* Full width for mobile */
-        }
-
-        /* xs */
-        @media (min-width: 475px) {
-            .container {
-                max-width: 475px;
-            }
-        }
-
-        /* sm */
-        @media (min-width: 640px) {
-            .container {
-                max-width: 640px;
-            }
-        }
-
-        /* md */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 768px;
-            }
-            .landing-content {
-                flex-direction: row; /* Side by side for medium screens */
-            }
-            .landing-content img,
-            .landing-content p {
-                width: 50%; /* Equal width side by side */
-            }
-        }
-
-        /* lg */
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 1024px;
-            }
-        }
-
-        /* xl */
-        @media (min-width: 1280px) {
-            .container {
-                max-width: 1280px;
-            }
-        }
-
-        /* 2xl */
-        @media (min-width: 1536px) {
-            .container {
-                max-width: 1536px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">	
+	</style>
 </head>
 <body>
     <div class="container">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="faq.html">FAQ</a></li> 
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <h1 class="logo">Surf Offset</h1>
         </header>
+        <div class="container">
+            <div class="hero-text">
+              <h1>Carbon Offset Your Surfboards</h1>
+              <p> Tally up your surfboards and offset in 5 mins
+                Savor the Flavor!
+              </p>
+              <button>Offset Now</button>
+            </div>
           </div>
           <img-comparison-slider class="my-image-grab">
         <img slot="first" src="Trees.jpg" width="300" height="300"/>
@@ -107,14 +39,86 @@
             cursor: grabbing;
         }
         </style>
+            <style>
+                .container {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    max-width: 800px;
+                }
+        
+                .landing-content {
+                    display: flex;
+                    flex-direction: column; /* Mobile-first: stack elements vertically */
+                    align-items: center;
+                    margin-top: 30px;
+                }
+        
+                .landing-content img {
+                    width: 100%; /* Full width for mobile */
+                    margin-bottom: 20px; /* Spacing between stacked elements */
+                }
+        
+                .landing-content p {
+                    width: 100%; /* Full width for mobile */
+                }
+        
+                /* xs */
+                @media (min-width: 475px) {
+                    .container {
+                        max-width: 475px;
+                    }
+                }
+        
+                /* sm */
+                @media (min-width: 640px) {
+                    .container {
+                        max-width: 640px;
+                    }
+                }
+        
+                /* md */
+                @media (min-width: 768px) {
+                    .container {
+                        max-width: 768px;
+                    }
+                    .landing-content {
+                        flex-direction: row; /* Side by side for medium screens */
+                    }
+                    .landing-content img,
+                    .landing-content p {
+                        width: 50%; /* Equal width side by side */
+                    }
+                }
+        
+                /* lg */
+                @media (min-width: 1024px) {
+                    .container {
+                        max-width: 1024px;
+                    }
+                }
+        
+                /* xl */
+                @media (min-width: 1280px) {
+                    .container {
+                        max-width: 1280px;
+                    }
+                }
+        
+                /* 2xl */
+                @media (min-width: 1536px) {
+                    .container {
+                        max-width: 1536px;
+                    }
+                }
+            </style>
 </img-comparison-slider>
 <script
   defer
   src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
 ></script>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum nibh nec feugiat feugiat. Proin pretium eros id sapien eleifend ultrices. Sed ac urna vel turpis vestibulum tincidunt nec a nisl. Nulla vestibulum leo eget magna fringilla eleifend.
-            </p>
         </div>
         <section class="main-content">
             <h1>Carbon Offset Your Surfing!</h1>
