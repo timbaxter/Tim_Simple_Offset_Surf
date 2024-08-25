@@ -5,8 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css">	
-	</style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            max-width: 800px;
+        }
+
+        .landing-content {
+            display: flex;
+            flex-direction: column; /* Mobile-first: stack elements vertically */
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .landing-content img {
+            width: 100%; /* Full width for mobile */
+            margin-bottom: 20px; /* Spacing between stacked elements */
+        }
+
+        .landing-content p {
+            width: 100%; /* Full width for mobile */
+        }
+
+        /* xs */
+        @media (min-width: 475px) {
+            .container {
+                max-width: 475px;
+            }
+        }
+
+        /* sm */
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px;
+            }
+        }
+
+        /* md */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+            }
+            .landing-content {
+                flex-direction: row; /* Side by side for medium screens */
+            }
+            .landing-content img,
+            .landing-content p {
+                width: 50%; /* Equal width side by side */
+            }
+        }
+
+        /* lg */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px;
+            }
+        }
+
+        /* xl */
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px;
+            }
+        }
+
+        /* 2xl */
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -39,81 +113,6 @@
             cursor: grabbing;
         }
         </style>
-            <style>
-                .container {
-                    width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    max-width: 800px;
-                }
-        
-                .landing-content {
-                    display: flex;
-                    flex-direction: column; /* Mobile-first: stack elements vertically */
-                    align-items: center;
-                    margin-top: 30px;
-                }
-        
-                .landing-content img {
-                    width: 100%; /* Full width for mobile */
-                    margin-bottom: 20px; /* Spacing between stacked elements */
-                }
-        
-                .landing-content p {
-                    width: 100%; /* Full width for mobile */
-                }
-        
-                /* xs */
-                @media (min-width: 475px) {
-                    .container {
-                        max-width: 475px;
-                    }
-                }
-        
-                /* sm */
-                @media (min-width: 640px) {
-                    .container {
-                        max-width: 640px;
-                    }
-                }
-        
-                /* md */
-                @media (min-width: 768px) {
-                    .container {
-                        max-width: 768px;
-                    }
-                    .landing-content {
-                        flex-direction: row; /* Side by side for medium screens */
-                    }
-                    .landing-content img,
-                    .landing-content p {
-                        width: 50%; /* Equal width side by side */
-                    }
-                }
-        
-                /* lg */
-                @media (min-width: 1024px) {
-                    .container {
-                        max-width: 1024px;
-                    }
-                }
-        
-                /* xl */
-                @media (min-width: 1280px) {
-                    .container {
-                        max-width: 1280px;
-                    }
-                }
-        
-                /* 2xl */
-                @media (min-width: 1536px) {
-                    .container {
-                        max-width: 1536px;
-                    }
-                }
-            </style>
 </img-comparison-slider>
 <script
   defer
